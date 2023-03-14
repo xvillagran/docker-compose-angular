@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  node:
+    build:
+      context: ./angular
+      # args:
+      #   - UID=${UID:-1000}
+      #   - GID=${GID:-1000}
+    working_dir: /home/node/app
+    ports:
+      - 4200:4200
+    volumes:
+      - ./src:/home/node/app
