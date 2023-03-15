@@ -7,6 +7,7 @@ A Docker Compose file to use as a base for Angular projects.
 
 
 ```bash
+docker compose run --rm node ng new myapp
 ```
 
 ## Usage
